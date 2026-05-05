@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drishanti - Luxury Jewellery</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="module" crossorigin src="/assets/index-CJQDsv9S.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CH8UINLc.css">
+</head>
+<body class="font-sans antialiased bg-transparent text-brand-dark">
+
+    <!-- Cinematic Background layer -->
+    <div id="cinematic-background" class="fixed inset-0 z-[-1] bg-[#F7F4EF]">
+        <canvas id="webgl" class="w-full h-full block"></canvas>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <div class="relative w-full overflow-x-hidden flex flex-col min-h-screen">
+        
+        <!-- Header -->
+        <div id="global-header"></div>
+
+        <main class="relative z-10 w-full flex-grow">
+            <!-- 1. Hero Section -->
+            <section class="scene relative min-h-[85vh] flex items-center px-5 sm:px-10 md:px-20 w-full overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img src="/hero.png" class="w-full h-full object-cover opacity-60" alt="Hero">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-[#F7F4EF]/95 via-[#F7F4EF]/70 to-transparent z-0"></div>
+                
+                <div class="relative z-10 w-full max-w-sm sm:max-w-md lg:max-w-xl parallax" data-aos="fade-right" data-aos-duration="1200">
+                    <p class="text-brand-gold text-[10px] sm:text-xs tracking-[0.3em] uppercase mb-4 font-semibold">Luxury Jewellery</p>
+                    <div class="w-12 h-[1px] bg-brand-gold mb-6"></div>
+                    <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6 text-brand-dark">Unveiling the<br>Beauty of Fine Jewelry</h2>
+                    <p class="text-sm sm:text-base md:text-lg text-brand-dark/80 mb-8 sm:mb-10">Handpicked gemstones and intricate designs for a lifetime of luxury.</p>
+                    <a href="/shop.html" class="btn-solid inline-block px-8 sm:px-10 py-3 sm:py-4 text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase">Shop Now</a>
+                </div>
+            </section>
+
+            <!-- 2. Collections Section -->
+            <section class="scene py-16 md:py-24 px-5 md:px-12 w-full max-w-[1600px] mx-auto text-center">
+                <div data-aos="fade-up" class="parallax">
+                    <h2 class="font-serif text-3xl md:text-4xl tracking-widest uppercase">Shop By Category</h2>
+                    <div class="gold-divider"><div class="gold-divider-diamond"></div></div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-12 md:mt-16 w-full">
+                    <div class="group cursor-pointer parallax bg-brand-card p-4 rounded-md shadow-lg" data-aos="fade-up">
+                        <div class="overflow-hidden rounded">
+                            <img src="/placeholder_collection1.png" class="w-full h-60 md:h-72 object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="font-serif text-lg md:text-xl mt-4 uppercase">Rings</h3>
+                    </div>
+                    <div class="group cursor-pointer parallax bg-brand-card p-4 rounded-md shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="overflow-hidden rounded">
+                            <img src="/placeholder_collection2.png" class="w-full h-60 md:h-72 object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="font-serif text-lg md:text-xl mt-4 uppercase">Earrings</h3>
+                    </div>
+                    <div class="group cursor-pointer parallax bg-brand-card p-4 rounded-md shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                        <div class="overflow-hidden rounded">
+                            <img src="/placeholder_collection3.png" class="w-full h-60 md:h-72 object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="font-serif text-lg md:text-xl mt-4 uppercase">Bracelets</h3>
+                    </div>
+                    <div class="group cursor-pointer parallax bg-brand-card p-4 rounded-md shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                        <div class="overflow-hidden rounded">
+                            <img src="/placeholder_collection4.png" class="w-full h-60 md:h-72 object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="font-serif text-lg md:text-xl mt-4 uppercase">Necklaces</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Tradition Banner Section -->
+            <section class="scene relative min-h-[60vh] md:min-h-[75vh] flex items-center border-y border-brand-border w-full overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img src="/mid_section.png" class="w-full h-full object-cover opacity-60">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-[#F7F4EF]/95 via-[#F7F4EF]/80 to-transparent z-0"></div>
+                <div class="relative z-10 w-full max-w-[1600px] mx-auto px-5 sm:px-10 md:px-12 parallax">
+                    <div class="w-full max-w-sm sm:max-w-md lg:max-w-xl py-12" data-aos="fade-right">
+                        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl uppercase tracking-widest leading-snug mb-6 text-brand-dark">Rooted in Tradition.<br>Designed for Today.</h2>
+                        <p class="text-sm md:text-lg text-brand-dark/90 mb-8 leading-relaxed">At Drishanti, every piece is more than jewellery — it is a symbol of pristine love, positivity and purpose.</p>
+                        <div class="w-12 h-[1px] bg-brand-gold mb-6"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Bestsellers Section -->
+            <section class="scene py-16 md:py-24 px-5 md:px-12 w-full max-w-[1600px] mx-auto text-center">
+                <div data-aos="fade-up" class="parallax">
+                    <h2 class="font-serif text-3xl md:text-4xl tracking-widest uppercase">Our Bestsellers</h2>
+                    <div class="gold-divider"><div class="gold-divider-diamond"></div></div>
+                </div>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-12 md:mt-16 w-full">
+                    <div class="bg-brand-card p-4 rounded-md relative text-left shadow-lg hover:-translate-y-2 transition-all group">
+                        <button class="absolute top-6 left-6 z-10 text-brand-muted hover:text-brand-primary transition"><i class="fa-regular fa-heart text-lg md:text-xl"></i></button>
+                        <div class="overflow-hidden rounded mb-4">
+                            <img src="/placeholder_product1.png" class="w-full h-48 md:h-56 object-cover mix-blend-multiply group-hover:scale-105 transition duration-500">
+                        </div>
+                        <h4 class="font-semibold text-xs md:text-sm mb-1 truncate">Diamond Pearl Engagement Ring</h4>
+                        <p class="font-serif font-bold tracking-wide mt-2 text-brand-dark">$160.00</p>
+                    </div>
+                    <div class="bg-brand-card p-4 rounded-md relative text-left shadow-lg hover:-translate-y-2 transition-all group">
+                        <button class="absolute top-6 left-6 z-10 text-brand-primary transition"><i class="fa-solid fa-heart text-lg md:text-xl"></i></button>
+                        <div class="overflow-hidden rounded mb-4">
+                            <img src="/placeholder_product2.png" class="w-full h-48 md:h-56 object-cover mix-blend-multiply group-hover:scale-105 transition duration-500">
+                        </div>
+                        <h4 class="font-semibold text-xs md:text-sm mb-1 truncate">Rose Gold Lotus Necklace</h4>
+                        <p class="font-serif font-bold tracking-wide mt-2 text-brand-dark">$200.00</p>
+                    </div>
+                    <div class="bg-brand-card p-4 rounded-md relative text-left shadow-lg hover:-translate-y-2 transition-all group">
+                        <button class="absolute top-6 left-6 z-10 text-brand-muted hover:text-brand-primary transition"><i class="fa-regular fa-heart text-lg md:text-xl"></i></button>
+                        <div class="overflow-hidden rounded mb-4">
+                            <img src="/placeholder_product3.png" class="w-full h-48 md:h-56 object-cover mix-blend-multiply group-hover:scale-105 transition duration-500">
+                        </div>
+                        <h4 class="font-semibold text-xs md:text-sm mb-1 truncate">Prestige Diamond Earrings</h4>
+                        <p class="font-serif font-bold tracking-wide mt-2 text-brand-dark">$290.00</p>
+                    </div>
+                    <div class="bg-brand-card p-4 rounded-md relative text-left shadow-lg hover:-translate-y-2 transition-all group">
+                        <button class="absolute top-6 left-6 z-10 text-brand-muted hover:text-brand-primary transition"><i class="fa-regular fa-heart text-lg md:text-xl"></i></button>
+                        <div class="overflow-hidden rounded mb-4">
+                            <img src="/placeholder_product4.png" class="w-full h-48 md:h-56 object-cover mix-blend-multiply group-hover:scale-105 transition duration-500">
+                        </div>
+                        <h4 class="font-semibold text-xs md:text-sm mb-1 truncate">Sapphire Swastik Bracelet</h4>
+                        <p class="font-serif font-bold tracking-wide mt-2 text-brand-dark">$450.00</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Gifting Section (Now Full-Width like Hero & Tradition) -->
+            <section class="scene relative min-h-[60vh] md:min-h-[75vh] flex items-center border-y border-brand-border w-full overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img src="/gift_section.png" class="w-full h-full object-cover opacity-60" alt="Gifting">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-[#F7F4EF]/95 via-[#F7F4EF]/80 to-transparent z-0"></div>
+                <div class="relative z-10 w-full max-w-[1600px] mx-auto px-5 sm:px-10 md:px-12 parallax">
+                    <div class="w-full max-w-sm sm:max-w-md lg:max-w-xl py-12" data-aos="fade-right">
+                        <p class="text-brand-gold text-[10px] sm:text-xs tracking-[0.3em] uppercase font-bold mb-4">Made for Meaningful Moments</p>
+                        <div class="w-12 h-[1px] bg-brand-gold mb-6"></div>
+                        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6 text-brand-dark">Gifts that Carry<br>Love & Protection</h2>
+                        <p class="text-sm md:text-lg text-brand-dark/90 mb-8 leading-relaxed">Celebrate every bond with jewellery that blesses, protects and stays forever.</p>
+                        <a href="/shop.html" class="btn-solid inline-block px-8 sm:px-10 py-3 sm:py-4 text-[10px] sm:text-xs font-bold tracking-[0.2em] uppercase shadow-lg">Explore Gifting</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Features Grid -->
+            <section class="border-b border-brand-border py-16 px-5 md:px-12 w-full bg-white">
+                <div class="max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <div class="flex items-start space-x-4"><i class="fa-solid fa-truck text-brand-gold text-3xl"></i><div><h4 class="font-bold uppercase mb-1">Free Shipping</h4><p class="text-xs text-brand-muted">On orders over $500</p></div></div>
+                    <div class="flex items-start space-x-4"><i class="fa-solid fa-rotate-left text-brand-gold text-3xl"></i><div><h4 class="font-bold uppercase mb-1">15 Days Returns</h4><p class="text-xs text-brand-muted">Money back guarantee</p></div></div>
+                    <div class="flex items-start space-x-4"><i class="fa-solid fa-headset text-brand-gold text-3xl"></i><div><h4 class="font-bold uppercase mb-1">Customer Support</h4><p class="text-xs text-brand-muted">24/7 dedicated support</p></div></div>
+                    <div class="flex items-start space-x-4"><i class="fa-solid fa-shield-halved text-brand-gold text-3xl"></i><div><h4 class="font-bold uppercase mb-1">Secure Payment</h4><p class="text-xs text-brand-muted">100% secure checkout</p></div></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <div id="global-footer"></div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- LIGHT UI OVERLAYS & MODALS                 -->
+    <!-- ========================================== -->
+
+    <!-- Auth Modal Backdrop -->
+    <div id="modal-backdrop" class="fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm hidden flex items-center justify-center opacity-0 transition-opacity duration-300 px-4">
+        
+        <!-- 1. LIGHT LOGIN MODAL -->
+        <div id="modal-login" class="bg-white text-brand-dark w-full max-w-[400px] p-8 shadow-2xl relative hidden border border-brand-border rounded-sm">
+            <button class="modal-close absolute top-5 right-5 text-brand-muted hover:text-brand-primary transition"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="font-serif text-3xl mb-1 text-center">Welcome</h3>
+            <p class="text-xs text-brand-muted mb-6 text-center">Please login here</p>
+            
+            <form id="login-form" class="space-y-4">
+                <div>
+                    <label class="block text-[10px] uppercase tracking-wider text-brand-muted mb-2">Email Address</label>
+                    <input type="email" placeholder="alexa.williams@example.com" class="form-input-light w-full border border-brand-border px-4 py-3 outline-none focus:border-brand-primary transition text-sm" required>
+                </div>
+                <div>
+                    <label class="block text-[10px] uppercase tracking-wider text-brand-muted mb-2">Password</label>
+                    <input type="password" placeholder="••••••••" class="form-input-light w-full border border-brand-border px-4 py-3 outline-none focus:border-brand-primary transition text-sm" required>
+                </div>
+                <div class="flex justify-between items-center text-xs text-brand-muted py-2">
+                    <label class="flex items-center space-x-2 cursor-pointer hover:text-brand-dark transition">
+                        <input type="checkbox" class="custom-checkbox">
+                        <span>Remember Me</span>
+                    </label>
+                    <a href="#" onclick="switchModal('modal-forgot')" class="hover:text-brand-primary transition">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn-primary w-full py-3 text-xs tracking-widest uppercase font-bold mt-2">Login</button>
+            </form>
+            <button type="button" onclick="switchModal('modal-register')" class="w-full py-3 mt-4 text-xs tracking-widest uppercase font-bold border border-brand-border text-brand-dark hover:bg-brand-primary hover:text-white hover:border-brand-primary transition">Register</button>
+        </div>
+
+        <!-- 2. LIGHT REGISTER MODAL -->
+        <div id="modal-register" class="bg-white text-brand-dark w-full max-w-[400px] p-8 shadow-2xl relative hidden border border-brand-border rounded-sm">
+            <button class="modal-close absolute top-5 right-5 text-brand-muted hover:text-brand-primary transition"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="font-serif text-3xl mb-1 text-center">Create Account</h3>
+            <p class="text-xs text-brand-muted mb-6 text-center">Please Enter Details</p>
+            
+            <form id="register-form" class="space-y-4">
+                <div>
+                    <label class="block text-[10px] uppercase tracking-wider text-brand-muted mb-2">Name</label>
+                    <input type="text" placeholder="Alexa Williams" class="form-input-light w-full border border-brand-border px-4 py-3 outline-none focus:border-brand-primary transition text-sm" required>
+                </div>
+                <div>
+                    <label class="block text-[10px] uppercase tracking-wider text-brand-muted mb-2">Email Address</label>
+                    <input type="email" placeholder="alexa.williams@example.com" class="form-input-light w-full border border-brand-border px-4 py-3 outline-none focus:border-brand-primary transition text-sm" required>
+                </div>
+                <div>
+                    <label class="block text-[10px] uppercase tracking-wider text-brand-muted mb-2">Password</label>
+                    <input type="password" placeholder="••••••••" class="form-input-light w-full border border-brand-border px-4 py-3 outline-none focus:border-brand-primary transition text-sm" required>
+                </div>
+                <div class="flex items-center text-xs text-brand-muted py-2">
+                    <label class="flex items-center space-x-2 cursor-pointer hover:text-brand-dark transition">
+                        <input type="checkbox" class="custom-checkbox" required>
+                        <span>I Agree to Terms & Conditions</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn-primary w-full py-3 text-xs tracking-widest uppercase font-bold mt-2">Register</button>
+            </form>
+            <button type="button" onclick="switchModal('modal-login')" class="w-full py-3 mt-4 text-xs tracking-widest uppercase font-bold border border-brand-border text-brand-dark hover:bg-brand-primary hover:text-white hover:border-brand-primary transition">Login</button>
+        </div>
+
+        <!-- 3. LIGHT SUCCESS MODAL -->
+        <div id="modal-success" class="bg-white text-brand-dark w-full max-w-[400px] p-10 shadow-2xl relative hidden text-center flex flex-col items-center border border-brand-border rounded-sm">
+            <div class="w-16 h-16 rounded-full bg-brand-primary flex items-center justify-center text-white text-2xl mb-6 shadow-[0_0_20px_rgba(212,131,138,0.4)]">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="font-serif text-2xl mb-2 text-brand-dark" id="success-title">Success</h3>
+            <p class="text-xs text-brand-muted mb-8" id="success-message">Action completed successfully.</p>
+            <button class="modal-close btn-primary w-full py-3 text-xs tracking-widest uppercase font-bold">Back to Site</button>
+        </div>
+    </div>
+
+    <!-- 4. CART SIDEBAR -->
+    <div id="cart-backdrop" class="fixed inset-0 z-[100] bg-black/40 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300"></div>
+    <div id="cart-sidebar" class="fixed top-0 right-0 h-full w-full max-w-sm bg-white z-[101] shadow-2xl transform translate-x-full transition-transform duration-400 flex flex-col">
+        <div class="p-6 border-b border-brand-border flex justify-between items-center">
+            <h3 class="font-serif text-2xl text-brand-dark">My Cart</h3>
+            <button class="cart-close text-gray-400 hover:text-brand-primary transition text-xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+        <!-- Dynamic Cart Items Container -->
+        <div id="cart-sidebar-items" class="flex-1 overflow-y-auto p-6 space-y-6">
+            <div class="flex justify-center items-center h-full text-brand-muted">
+                <i class="fa-solid fa-spinner fa-spin text-2xl"></i>
+            </div>
+        </div>
+
+        <div class="p-6 border-t border-brand-border bg-gray-50">
+            <div class="flex justify-between items-center mb-4 text-brand-dark">
+                <span class="text-sm font-bold uppercase tracking-widest">Subtotal</span>
+                <span class="font-serif text-xl font-bold cart-subtotal-display">$0.00</span>
+            </div>
+            <div class="flex gap-3">
+                <a href="/cart.html" class="flex-1 text-center py-3 border border-brand-dark text-brand-dark text-xs font-bold tracking-widest uppercase hover:bg-brand-dark hover:text-white transition">View Cart</a>
+                <a href="/checkout.html" class="flex-1 text-center py-3 btn-primary text-xs font-bold tracking-widest uppercase shadow-lg">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Entry Script generated by Vite -->
+</body>
+</html>
