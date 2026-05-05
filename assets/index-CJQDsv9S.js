@@ -12,7 +12,7 @@ var e=Object.create,t=Object.defineProperty,n=Object.getOwnPropertyDescriptor,r=
 
             <!-- Center Logo -->
             <div class="logo flex-shrink-0 absolute left-1/2 transform -translate-x-1/2">
-                <a href="/index.html"><img src="/logo.png" alt="Drishanti" class="h-10 md:h-12 bg-transparent mix-blend-multiply"></a>
+                <a href="/index.html"><img src="/drish/logo.png" alt="Drishanti" class="h-10 md:h-12 bg-transparent mix-blend-multiply"></a>
             </div>
 
             <!-- Mobile Menu Toggle -->
